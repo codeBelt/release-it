@@ -2,6 +2,8 @@
 
 This is an official starter Turborepo.
 
+[![Test](https://github.com/du5rte/turborepo/actions/workflows/test.yml/badge.svg)](https://github.com/du5rte/turborepo/actions/workflows/test.yml)
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
