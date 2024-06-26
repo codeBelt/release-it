@@ -1,48 +1,29 @@
 # Turborepo starter
 
-This is an official starter Turborepo.
+[Turborepo](https://turbo.build/repo) is a high-performance system for monorepos, simplifies managing your codebase as you can have a single `lint`, `build`, `test`, and `release` process for all packages. [Learn more](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software) about how monorepos improve your development workflow.
 
 [![Test](https://github.com/du5rte/turborepo/actions/workflows/test.yml/badge.svg)](https://github.com/du5rte/turborepo/actions/workflows/test.yml)
 
 ## What's inside?
 
-This Turborepo includes the following packages/apps:
+This guide explains how to use a React design system starter powered by:
+
+- 🏎 [Turborepo](https://turbo.build/repo) — High-performance build system for Monorepos
+- 🚀 [React](https://reactjs.org/) — JavaScript library for user interfaces
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `web`: a [Next.js](https://nextjs.org/) app
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Useful Commands
 
-### Utilities
+- `pnpm dev` - Previews all apps locally
+- `pnpm lint` - Lint all apps and packages
+- `pnpm build` - Build all packages
+- `pnpm release` - Bumps version, updates changelog and releases
+- `pnpm clean` - Clean up all `node_modules` and `dist` folders
 
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/). See more on [CONTRIBUTING](/CONTRIBUTING.md) on developer tools.
 
 ### Remote Caching
 
