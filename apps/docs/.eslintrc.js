@@ -6,4 +6,14 @@ module.exports = {
   parserOptions: {
     project: true,
   },
+  overrides: [
+    {
+      files: ["*.md", "*.mdx"],
+      extends: "plugin:mdx/recommended",
+      // TODO: Enable this when it works properly
+      // settings: {
+      //   "mdx/code-blocks": true,
+      // },
+    },
+  ],
 };
