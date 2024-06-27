@@ -1,6 +1,6 @@
 # Turborepo starter
 
-[Turborepo](https://turbo.build/repo) is a high-performance system for monorepos, simplifies managing your codebase as you can have a single `lint`, `build`, `test`, and `release` process for all packages. [Learn more](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software) about how monorepos improve your development workflow.
+[Turborepo](https://turbo.build/repo) is a high-performance system for monorepos, simplifies managing multiple packages shared across web and native environments. [Learn more](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software) about how monorepos improve your development workflow.
 
 [![Test](https://github.com/du5rte/turborepo/actions/workflows/test.yml/badge.svg)](https://github.com/du5rte/turborepo/actions/workflows/test.yml)
 
