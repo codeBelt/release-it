@@ -6,14 +6,17 @@
 
 ## What's inside?
 
-This guide explains how to use a React design system starter powered by:
+This guide explains how to this monorepo powered by:
 
 - 🏎 [Turborepo](https://turbo.build/repo) — High-performance build system for Monorepos
 - 🚀 [React](https://reactjs.org/) — JavaScript library for user interfaces
+- ⚡️ [Next.js](https://nextjs.org/) — React framework for high-performance websites
+- 📚 [Nextra](https://nextra.vercel.app/) — Next.js static site generator for creating documentation
 
 ### Apps and Packages
 
 - `web`: a [Next.js](https://nextjs.org/) app
+- `docs`: A [Nextra](https://nextra.vercel.app/) app
 
 ### Useful Commands
 
@@ -40,7 +43,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
 
-```
+```sh
 npx turbo link
 ```
 
