@@ -9,7 +9,12 @@
   },
   "include": [
     "next-env.d.ts",
-    "next.config.js",
+    /* .config.js files */
+    "**/*.config.js",
+    "**/*.config.csj",
+    "**/*.config.mjs",
+    "**/*.config.ts",
+    "**/*.config.tsx",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"

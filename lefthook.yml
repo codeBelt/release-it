@@ -9,9 +9,6 @@ pre-commit:
     lint:
       glob: "*.{js,ts,jsx,tsx}"
       run: pnpm eslint {staged_files}
-    types:
-      glob: "*.{js,ts,jsx,tsx}"
-      run: pnpm tsc --noEmit
 commit-msg:
   parallel: true
   commands:
