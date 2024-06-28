@@ -1,5 +1,5 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  extends: ['@repo/eslint-config/next.js', 'plugin:storybook/recommended'],
+  extends: ['@repo/eslint-config/next.js'],
 }

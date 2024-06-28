@@ -34,14 +34,15 @@ module.exports = {
     'prettier/prettier': 'warn',
   },
   overrides: [
-    { files: ['*.js?(x)', '*.ts?(x)'] },
+    {
+      files: ['*.js?(x)', '*.ts?(x)'],
+    },
     {
       files: ['*.mdx'],
-      extends: 'plugin:mdx/recommended',
-      // TODO: Enable this when it works properly
-      // settings: {
-      //   "mdx/code-blocks": true,
-      // },
+      extends: ['plugin:react/recommended', 'plugin:mdx/recommended'],
+      settings: {
+        'mdx/code-blocks': false, // TODO: Enable this when it works properly
+      },
     },
   ],
   ignorePatterns: [
