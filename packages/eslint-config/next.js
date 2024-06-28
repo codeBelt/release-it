@@ -36,7 +36,7 @@ module.exports = {
   overrides: [
     { files: ['*.js?(x)', '*.ts?(x)'] },
     {
-      files: ['*.md(x)'],
+      files: ['*.mdx'],
       extends: 'plugin:mdx/recommended',
       // TODO: Enable this when it works properly
       // settings: {
