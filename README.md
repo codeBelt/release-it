@@ -12,6 +12,7 @@ This guide explains how to this monorepo powered by:
 - 🚀 [React](https://reactjs.org/) — JavaScript library for user interfaces
 - ⚡️ [Next.js](https://nextjs.org/) — React framework for high-performance websites
 - 📚 [Nextra](https://nextra.vercel.app/) — Next.js static site generator for creating documentation
+- 📱 [Expo](https://expo.dev/) — Platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
 
 ### Apps and Packages
 
