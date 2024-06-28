@@ -3,14 +3,23 @@
 #   Refer for explanation to following link:
 #   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 #
-pre-commit:
-  parallel: true
-  commands:
-    lint:
-      glob: "*.{js,ts,jsx,tsx}"
-      run: pnpm eslint {staged_files}
+
+# pre-commit:
+#   parallel: true
+#   commands:
+#     lint:
+#       glob: "*.{js,ts,jsx,tsx}"
+#       run: pnpm eslint {staged_files}
+
 commit-msg:
   parallel: true
   commands:
     commitlint:
       run: pnpm commitlint --edit
+
+#
+#   After making changes you need to sync the hooks with your Git project for them to take effect. 
+#   Run the following command in your terminal:
+#
+#   $ lefthook install
+#
