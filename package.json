@@ -25,6 +25,11 @@
   "engines": {
     "node": ">=18"
   },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
   },

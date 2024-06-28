@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 interface PreviewProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 function Preview(props: PreviewProps) {
-  const { children, ...rest } = props;
+  const { children, ...rest } = props
 
   return (
     <div
@@ -14,7 +14,7 @@ function Preview(props: PreviewProps) {
     >
       {children}
     </div>
-  );
+  )
 }
 
-export default Preview;
+export default Preview

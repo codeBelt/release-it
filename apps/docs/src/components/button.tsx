@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 interface ButtonProps {
-  title: string;
+  title: string
 }
 
 function MyButton(props: ButtonProps) {
-  const { title, ...rest } = props;
+  const { title, ...rest } = props
 
   return (
     <a
@@ -16,7 +16,7 @@ function MyButton(props: ButtonProps) {
       <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
       <span className="relative">{title}</span>
     </a>
-  );
+  )
 }
 
-export default MyButton;
+export default MyButton
