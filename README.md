@@ -13,11 +13,16 @@ This guide explains how to this monorepo powered by:
 - ⚡️ [Next.js](https://nextjs.org/) — React framework for high-performance websites
 - 📚 [Nextra](https://nextra.vercel.app/) — Next.js static site generator for creating documentation
 - 📱 [Expo](https://expo.dev/) — Platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+- 📚 [Storybook](https://storybook.js.org/) — Streamlines creating and testing UI components in a sandboxed environment.
 
 ### Apps and Packages
 
-- `web`: a [Next.js](https://nextjs.org/) app
-- `docs`: A [Nextra](https://nextra.vercel.app/) app
+- `web`: [Next.js](https://nextjs.org/)
+- `mobile`: [Expo](https://expo.dev/)
+- `storybook`: [Storybook](https://storybook.js.org/)
+- `docs`: [Nextra](https://nextra.vercel.app/)
+
+## Turbo
 
 ### Useful Commands
 
@@ -48,7 +53,7 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 npx turbo link
 ```
 
-## Useful Links
+### Useful Links
 
 Learn more about the power of Turborepo:
 
