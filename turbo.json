@@ -13,6 +13,10 @@
       "cache": false,
       "persistent": true
     },
+    "test": {
+      "cache": false,
+      "dependsOn": ["^lint"]
+    },
     "clean": {
       "cache": false
     }
