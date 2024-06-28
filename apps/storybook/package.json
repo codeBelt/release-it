@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm storybook",
+    "build": "pnpm build-storybook",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
