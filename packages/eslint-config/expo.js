@@ -9,7 +9,7 @@ module.exports = {
     project: true,
   },
   extends: ['eslint:recommended', 'expo', 'prettier'],
-  plugins: ['prettier', 'only-warn'],
+  plugins: ['prettier'],
   settings: {
     'import/resolver': {
       typescript: {
