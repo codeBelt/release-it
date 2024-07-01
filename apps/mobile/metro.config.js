@@ -24,4 +24,7 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, 'node_modules'),
 ]
 
+// Enable package json exports
+config.resolver.unstable_enablePackageExports = true
+
 module.exports = config

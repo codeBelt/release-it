@@ -1,20 +1,33 @@
 'use client'
 
-import { ReactNode } from 'react'
-
 interface ButtonProps {
-  children: ReactNode
+  title?: string
+  appName?: string
+  primary?: boolean
   className?: string
-  appName: string
+  backgroundColor?: string
+  size?: 'small' | 'large'
+  onClick?: () => void
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button = ({
+  title,
+  appName,
+  className,
+  backgroundColor,
+  onClick, // TODO: onPress -> react-native => react-native-web
+}: ButtonProps) => {
   return (
     <button
       className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
+      onClick={
+        onClick
+          ? onClick
+          : () => alert(`Hello from your ${appName || '??'} app!`)
+      }
+      style={{ backgroundColor }}
     >
-      {children}
+      {title}
     </button>
   )
 }
