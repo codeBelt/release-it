@@ -1,6 +1,7 @@
 import { Image, StyleSheet, Platform } from 'react-native'
 
 import { multiply } from '@repo/utils/multiply'
+import { Button } from '@repo/ui/button'
 
 import { HelloWave } from '@/components/HelloWave'
 import ParallaxScrollView from '@/components/ParallaxScrollView'
@@ -24,6 +25,7 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView>
         <ThemedText>3x3={multiply(3, 3)}</ThemedText>
+        <Button title={`3x3=${multiply(3, 3)}`} />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>

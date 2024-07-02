@@ -1,5 +1,7 @@
 'use client'
 
+import { Text, View, TouchableOpacity } from 'react-native'
+
 interface ButtonProps {
   title?: string
   appName?: string
@@ -10,24 +12,12 @@ interface ButtonProps {
   onClick?: () => void
 }
 
-export const Button = ({
-  title,
-  appName,
-  className,
-  backgroundColor,
-  onClick, // TODO: onPress -> react-native => react-native-web
-}: ButtonProps) => {
+export const Button = ({ title, backgroundColor }: ButtonProps) => {
   return (
-    <button
-      className={className}
-      onClick={
-        onClick
-          ? onClick
-          : () => alert(`Hello from your ${appName || '??'} app!`)
-      }
-      style={{ backgroundColor }}
-    >
-      {title}
-    </button>
+    <TouchableOpacity>
+      <View style={{ backgroundColor: backgroundColor || 'red', padding: 12 }}>
+        <Text>{title}</Text>
+      </View>
+    </TouchableOpacity>
   )
 }
