@@ -11,7 +11,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "clean": "rm -rf .turbo .expo web-build node_modules"
+    "doctor": "pnpm dlx expo-doctor",
+    "clean": "rm -rf .turbo .expo web-build node_modules && watchman watch-del-all && rm -fr $TMPDIR/haste-map-* && rm -rf $TMPDIR/metro-cache"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
