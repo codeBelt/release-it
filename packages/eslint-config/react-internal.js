@@ -16,9 +16,6 @@ module.exports = {
     React: true,
     JSX: true,
   },
-  env: {
-    browser: true,
-  },
   settings: {
     'import/resolver': {
       typescript: {
