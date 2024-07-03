@@ -2,11 +2,16 @@
 
 import Button from '../../components/button'
 import Preview from '../../components/preview'
+import { Button as RNButton } from '@repo/ui/button'
 
 ```jsx
 <Button title="Click me" onClick={() => alert('Clicked!')} />
 ```
 
 <Preview>
-  <Button title="Click me" onClick={() => alert('Clicked!')} />
+  <Button title="Click me" />
+</Preview>
+
+<Preview>
+  <RNButton title="Click me" />
 </Preview>

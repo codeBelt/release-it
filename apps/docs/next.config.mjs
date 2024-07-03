@@ -1,11 +1,23 @@
-import nextra from "nextra";
+import nextra from 'nextra'
+import { withExpo } from '@expo/next-adapter'
 
-const withNextra = nextra({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.tsx",
-});
+const expoConfig = withExpo({
+  transpilePackages: [
+    'react-native',
+    'expo',
+    // Add more React Native/Expo packages here...
+  ],
+  experimental: {
+    forceSwcTransforms: true,
+  },
+})
+
+const nextraConfig = nextra({
+  theme: 'nextra-theme-docs',
+  themeConfig: './theme.config.tsx',
+})
 
 /** @type {import('next').NextConfig} */
-const nextConfig = withNextra();
+const nextConfig = nextraConfig(expoConfig)
 
-export default nextConfig;
+export default nextConfig
