@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\"",
+    "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,tsx,md,mdx}\"",
     "test": "turbo test",
     "build": "turbo build",
     "release": "release-it",
