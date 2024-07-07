@@ -14,6 +14,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/config-pnpm-scopes": "^19.1.0",
     "@release-it/conventional-changelog": "^8.0.1",
     "lefthook": "^1.6.18",
     "prettier": "^3.2.5",
@@ -31,12 +32,10 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix"
-  },
   "commitlint": {
     "extends": [
-      "@commitlint/config-conventional"
+      "@commitlint/config-conventional",
+      "@commitlint/config-pnpm-scopes"
     ]
   },
   "release-it": {

@@ -4,23 +4,42 @@
 #   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
 #
 
-pre-commit:
-  parallel: true
-  commands:
-    lint:
-      glob: "*.{js,ts,cjs,mjs,jsx,tsx,mdx}"
-      run: pnpm eslint {staged_files}
-
 commit-msg:
   parallel: true
   commands:
     commitlint:
       run: pnpm commitlint --edit
 
+pre-commit:
+  parallel: true
+  commands:
+    json:
+      glob: "*.json"
+      run: pnpm prettier --check {staged_files}
+    docs:
+      root: "apps/docs/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm eslint {staged_files}
+    mobile:
+      root: "apps/mobile/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx}"
+      run: pnpm eslint {staged_files}
+    storybook:
+      root: "apps/storybook/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm eslint {staged_files}
+    web:
+      root: "apps/web/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm eslint {staged_files}
+    md:
+      glob: "*.md"
+      run: pnpm prettier --check {staged_files}
+
 pre-push:
   follow: true
   commands:
-    frontend-tests:
+    tests:
       run: pnpm test
 
 #
