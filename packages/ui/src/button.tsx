@@ -9,7 +9,7 @@ interface ButtonProps {
   className?: string
   backgroundColor?: string
   size?: 'small' | 'large'
-  onClick?: () => void
+  onPress?: () => void
 }
 
 export const Button = ({ title, backgroundColor }: ButtonProps) => {

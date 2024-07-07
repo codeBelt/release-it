@@ -8,7 +8,12 @@ module.exports = {
   parserOptions: {
     project: true,
   },
-  extends: ['eslint:recommended', 'expo', 'prettier'],
+  extends: [
+    'eslint:recommended',
+    'plugin:storybook/recommended',
+    'expo',
+    'prettier',
+  ],
   plugins: ['prettier'],
   settings: {
     'import/resolver': {
@@ -22,9 +27,19 @@ module.exports = {
   },
   overrides: [
     {
+      files: ['*.js?(x)', '*.ts?(x)'],
+    },
+    {
       files: ['*.config.js'],
       env: {
         node: true,
+      },
+    },
+    {
+      files: ['*.mdx'],
+      extends: ['plugin:react/recommended', 'plugin:mdx/recommended'],
+      settings: {
+        'mdx/code-blocks': false, // TODO: Enable this when it works properly
       },
     },
   ],

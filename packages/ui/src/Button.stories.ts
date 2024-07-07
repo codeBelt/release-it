@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
-import { Button } from './Button'
+import { Button } from './button'
 
-import { multiply } from '@repo/utils/multiply'
+// import { multiply } from '@repo/utils/multiply'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta: Meta<typeof Button> = {
-  title: 'Example/Button',
+  title: 'ui-button',
   component: Button,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
@@ -19,7 +19,7 @@ const meta: Meta<typeof Button> = {
     backgroundColor: { control: 'color' },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn() },
+  args: { onPress: fn() },
 }
 
 export default meta
@@ -30,20 +30,20 @@ type Story = StoryObj<typeof Button>
 export const Primary: Story = {
   args: {
     primary: true,
-    label: `3x3=${multiply(3, 3)}`,
+    title: `Button`,
   },
 }
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    title: 'Button',
   },
 }
 
 export const Warning: Story = {
   args: {
     primary: true,
-    label: 'Delete now',
+    title: 'Delete now',
     backgroundColor: 'red',
   },
 }
@@ -58,6 +58,6 @@ export const Large: Story = {
 export const Small = {
   args: {
     size: 'small',
-    label: 'Button',
+    title: 'Button',
   },
 }

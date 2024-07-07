@@ -27,4 +27,8 @@ config.resolver.nodeModulesPaths = [
 // Enable package json exports
 config.resolver.unstable_enablePackageExports = true
 
+// Enable transformer.unstable_allowRequireContext for storybook
+config.transformer.unstable_allowRequireContext = true
+config.resolver.sourceExts.push('mjs')
+
 module.exports = config
