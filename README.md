@@ -15,12 +15,16 @@ This guide explains how to this monorepo powered by:
 - 📱 [Expo](https://expo.dev/) — Platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
 - 📚 [Storybook](https://storybook.js.org/) — Streamlines creating and testing UI components in a sandboxed environment.
 
-### Apps and Packages
+### Apps
 
-- `web`: [Next.js](https://nextjs.org/)
-- `mobile`: [Expo](https://expo.dev/)
-- `storybook`: [Storybook](https://storybook.js.org/)
-- `docs`: [Nextra](https://nextra.vercel.app/)
+    .
+    ├── ...
+    ├── apps
+    │   ├── docs            # Documentation site for the project
+    │   ├── mobile          # Mobile application built with Expo and React Native
+    │   ├── storybook       # Storybook for developing and testing UI components
+    │   └── web             # Web single-page application
+    └── ...
 
 ## Turbo
 
