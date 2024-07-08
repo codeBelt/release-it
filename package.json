@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "turbo dev",
+    "mobile": "turbo dev --filter=\"{./apps/mobile}...\"",
+    "storybook": "turbo dev --filter=\"{./apps/storybook}...\"",
+    "web": "turbo dev --filter=\"{./apps/web}...\"",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,tsx,md,mdx}\"",
     "test": "turbo test",
