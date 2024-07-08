@@ -11,6 +11,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
+    "test": "jest",
     "doctor": "pnpm dlx expo-doctor",
     "clean": "rm -rf .turbo .expo web-build node_modules && watchman watch-del-all && rm -fr $TMPDIR/haste-map-* && rm -rf $TMPDIR/metro-cache"
   },
