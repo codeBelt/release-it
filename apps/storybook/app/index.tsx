@@ -1,5 +1,5 @@
 import { registerRootComponent } from 'expo'
 
-import Storybook from '../.storybook_ondevice'
+import App from './App'
 
-registerRootComponent(Storybook)
+registerRootComponent(App)
