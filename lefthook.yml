@@ -13,28 +13,54 @@ commit-msg:
 pre-commit:
   parallel: true
   commands:
-    json:
-      glob: "*.json"
+    lint-root:
+      glob: "*.{json,md}"
       run: pnpm prettier --check {staged_files}
-    docs:
+
+    lint-docs:
       root: "apps/docs/"
       glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
       run: pnpm eslint {staged_files}
-    mobile:
+    test-docs:
+      root: "apps/docs/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
+
+    lint-mobile:
       root: "apps/mobile/"
       glob: "*.{js,csj,mjs,ts,jsx,tsx}"
       run: pnpm eslint {staged_files}
-    storybook:
+    test-mobile:
+      root: "apps/mobile/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx}"
+      run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
+
+    lint-storybook:
       root: "apps/storybook/"
       glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
       run: pnpm eslint {staged_files}
-    web:
+    test-storybook:
+      root: "apps/storybook/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
+
+    lint-web:
       root: "apps/web/"
       glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
       run: pnpm eslint {staged_files}
-    md:
-      glob: "*.md"
-      run: pnpm prettier --check {staged_files}
+    test-web:
+      root: "apps/web/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
+
+    lint-ui:
+      root: "packages/ui/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm eslint {staged_files}
+    test-ui:
+      root: "packages/ui/"
+      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
 pre-push:
   follow: true
