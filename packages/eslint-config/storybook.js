@@ -1,6 +1,6 @@
-const { resolve } = require('node:path')
+const {resolve} = require('node:path');
 
-const project = resolve(process.cwd(), 'tsconfig.json')
+const project = resolve(process.cwd(), 'tsconfig.json');
 
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
@@ -8,12 +8,7 @@ module.exports = {
   parserOptions: {
     project: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:storybook/recommended',
-    'expo',
-    'prettier',
-  ],
+  extends: ['eslint:recommended', 'plugin:storybook/recommended', 'expo', 'prettier'],
   plugins: ['prettier'],
   settings: {
     'import/resolver': {
@@ -48,4 +43,4 @@ module.exports = {
     '.*.js',
     'node_modules/',
   ],
-}
+};

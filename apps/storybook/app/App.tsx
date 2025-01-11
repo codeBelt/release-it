@@ -1,1 +1,1 @@
-export { default } from '../.storybook_ondevice'
+export {default} from '../.storybook_ondevice';

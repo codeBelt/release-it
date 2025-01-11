@@ -1,5 +1,4 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import {DocsThemeConfig} from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: <span>Turborepo</span>,
@@ -21,7 +20,7 @@ const config: DocsThemeConfig = {
       </span>
     ),
   },
-}
+};
 
-export default config
+export default config;
 // https://nextra.site/docs

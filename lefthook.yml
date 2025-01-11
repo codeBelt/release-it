@@ -14,52 +14,52 @@ pre-commit:
   parallel: true
   commands:
     lint-root:
-      glob: "*.{json,md}"
+      glob: '*.{json,md}'
       run: pnpm prettier --check {staged_files}
 
     lint-docs:
-      root: "apps/docs/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/docs/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm eslint {staged_files}
     test-docs:
-      root: "apps/docs/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/docs/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
     lint-mobile:
-      root: "apps/mobile/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx}"
+      root: 'apps/mobile/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx}'
       run: pnpm eslint {staged_files}
     test-mobile:
-      root: "apps/mobile/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx}"
+      root: 'apps/mobile/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx}'
       run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
     lint-storybook:
-      root: "apps/storybook/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/storybook/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm eslint {staged_files}
     test-storybook:
-      root: "apps/storybook/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/storybook/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
     lint-web:
-      root: "apps/web/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/web/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm eslint {staged_files}
     test-web:
-      root: "apps/web/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'apps/web/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
     lint-ui:
-      root: "packages/ui/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'packages/ui/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm eslint {staged_files}
     test-ui:
-      root: "packages/ui/"
-      glob: "*.{js,csj,mjs,ts,jsx,tsx,mdx}"
+      root: 'packages/ui/'
+      glob: '*.{js,csj,mjs,ts,jsx,tsx,mdx}'
       run: pnpm jest --findRelatedTests {staged_files} --passWithNoTests
 
 pre-push:
@@ -67,9 +67,8 @@ pre-push:
   commands:
     tests:
       run: pnpm test
-
 #
-#   After making changes you need to sync the hooks with your Git project for them to take effect. 
+#   After making changes you need to sync the hooks with your Git project for them to take effect.
 #   Run the following command in your terminal:
 #
 #   $ pnpm lefthook install

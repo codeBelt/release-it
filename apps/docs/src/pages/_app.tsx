@@ -1,9 +1,8 @@
-import React from 'react'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app';
 
-import '../styles/globals.css'
+import '../styles/globals.css';
 
 // This default export is required in a new `pages/_app.js` file.
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function App({Component, pageProps}: AppProps) {
+  return <Component {...pageProps} />;
 }

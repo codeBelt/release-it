@@ -8,32 +8,30 @@
     "storybook": "turbo dev --filter=\"{./apps/storybook}...\"",
     "web": "turbo dev --filter=\"{./apps/web}...\"",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{js,cjs,mjs,jsx,ts,tsx,md,mdx}\"",
     "test": "turbo test",
     "build": "turbo build",
     "release": "release-it",
-    "clean": "turbo run clean && rm -rf node_modules"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write .",
+    "-----------------------------------------------------------------------": ""
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@commitlint/config-pnpm-scopes": "^19.1.0",
-    "@release-it/conventional-changelog": "^8.0.1",
-    "lefthook": "^1.6.18",
-    "prettier": "^3.2.5",
-    "release-it": "^17.4.0",
-    "release-it-pnpm": "^4.6.2",
-    "turbo": "^2.0.5",
-    "typescript": "^5.4.5"
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/config-pnpm-scopes": "19.1.0",
+    "@release-it/conventional-changelog": "8.0.1",
+    "lefthook": "1.6.18",
+    "prettier": "3.4.2",
+    "prettier-plugin-organize-imports": "4.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "release-it": "17.4.0",
+    "release-it-pnpm": "4.6.2",
+    "turbo": "2.0.5",
+    "typescript": "5.4.5"
   },
   "packageManager": "pnpm@9.4.0",
   "engines": {
     "node": ">=18"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
   },
   "commitlint": {
     "extends": [

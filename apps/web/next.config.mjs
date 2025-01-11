@@ -1,4 +1,4 @@
-import { withExpo } from '@expo/next-adapter'
+import {withExpo} from '@expo/next-adapter';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = withExpo({
@@ -10,6 +10,6 @@ const nextConfig = withExpo({
   experimental: {
     forceSwcTransforms: true,
   },
-})
+});
 
-export default nextConfig
+export default nextConfig;

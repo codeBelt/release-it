@@ -1,5 +1,5 @@
-import nextra from 'nextra'
-import { withExpo } from '@expo/next-adapter'
+import {withExpo} from '@expo/next-adapter';
+import nextra from 'nextra';
 
 const expoConfig = withExpo({
   transpilePackages: [
@@ -10,14 +10,14 @@ const expoConfig = withExpo({
   experimental: {
     forceSwcTransforms: true,
   },
-})
+});
 
 const nextraConfig = nextra({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
-})
+});
 
 /** @type {import('next').NextConfig} */
-const nextConfig = nextraConfig(expoConfig)
+const nextConfig = nextraConfig(expoConfig);
 
-export default nextConfig
+export default nextConfig;

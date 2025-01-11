@@ -18,7 +18,7 @@
   "eslint.options": {
     "extensions": [".js", ".csj", ".mjs", ".jsx", ".ts", ".tsx", ".md", ".mdx"]
   },
-  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.workingDirectories": [{"mode": "auto"}],
   // TypeScript settings
   "typescript.tsdk": "node_modules/typescript/lib",
   // "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -50,11 +50,5 @@
   "[mdx]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "colorize.languages": [
-    "json",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ]
+  "colorize.languages": ["json", "javascript", "javascriptreact", "typescript", "typescriptreact"]
 }

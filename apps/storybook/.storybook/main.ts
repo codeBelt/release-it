@@ -1,12 +1,12 @@
-import { join, dirname } from 'path'
-import { StorybookConfig } from '@storybook/react-webpack5'
+import {StorybookConfig} from '@storybook/react-webpack5';
+import {dirname, join} from 'path';
 
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
  */
 function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, 'package.json')))
+  return dirname(require.resolve(join(value, 'package.json')));
 }
 
 const main: StorybookConfig = {
@@ -37,6 +37,6 @@ const main: StorybookConfig = {
   docs: {
     autodocs: true,
   },
-}
+};
 
-export default main
+export default main;
